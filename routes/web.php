@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/exception', function () {
+    throw new \Exception("Soy una excepcion");
+});
+
 Auth::routes(["verify" => true]);
 Auth::routes();
 
