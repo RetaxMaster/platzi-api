@@ -31,7 +31,7 @@ class CategoryControllerTest extends TestCase
 
         $response->assertSuccessful();
         //$response->assertHeader('content-type', 'application/json');
-        $response->assertJsonCount(6); // 6 porque la mirgacion creo una por defecto que es "otros"
+        $response->assertJsonCount(7); // 7 porque la mirgacion creo una por defecto que es "otros"
     }
 
     public function test_create_new_category()
