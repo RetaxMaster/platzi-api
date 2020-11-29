@@ -21,6 +21,10 @@ Route::get('/exception', function () {
     throw new \Exception("Soy una excepcion");
 });
 
+Route::get('/server-error', function () {
+    abort(500);
+});
+
 Auth::routes(["verify" => true]);
 Auth::routes();
 
